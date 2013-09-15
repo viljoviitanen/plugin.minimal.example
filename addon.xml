@@ -11,9 +11,9 @@
         <platform>all</platform>
         <summary lang="en">Minimal example plugin</summary>        
         <description lang="en">A minimal, but working plugin to jumpstart xbmc plugin development quickly</description>
+        <license>Unlicence</license>
+        <source>http://example.com</source>
+        <website>http://example.com</website>
+        <email>nobody@example.com</email>
     </extension>
-    <license>Unlicence</license>
-    <source>http://example.com</source>
-    <website>http://example.com</website>
-    <email>nobody@example.com</email>
 </addon>
