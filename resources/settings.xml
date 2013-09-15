@@ -1,0 +1,3 @@
+<settings>
+   <setting id="username" type="text" label="30000" default=""/>
+</settings>

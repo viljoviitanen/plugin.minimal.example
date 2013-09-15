@@ -1,0 +1,2 @@
+[B]0.0.0[/B]
+- An example changelog entry!

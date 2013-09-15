@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.minimal.example-master" name="Minimal example plugin" version="0.0.0" provider-name="Example Plugin">
+<!-- note the id has -master in it because then the github repo download is then an installable zip -->
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides> <!-- remember to also change this accordingly you your plugin! -->
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Minimal example plugin</summary>        
+        <description lang="en">A minimal, but working plugin to jumpstart xbmc plugin development quickly</description>
+    </extension>
+    <license>Unlicence</license>
+    <source>http://example.com</source>
+    <website>http://example.com</website>
+    <email>nobody@example.com</email>
+</addon>
