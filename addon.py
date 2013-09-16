@@ -24,14 +24,9 @@
 # For more information, please refer to <http://unlicense.org/>
 # 
 
-import locale
-locale.setlocale(locale.LC_ALL, 'C')
-
 import xbmcgui, xbmcplugin, xbmcaddon
 
-addon = xbmcaddon.Addon('plugin.minimal.example-master');
-#note the -master is in the plugin name so that github repo zip download
-#gives a working addon.
+addon = xbmcaddon.Addon();
 
 username=addon.getSetting('username')
 if username=='':
