@@ -24,15 +24,16 @@
 # For more information, please refer to <http://unlicense.org/>
 # 
 
-import xbmcgui, xbmcplugin, xbmcaddon
+import xbmcgui
+import xbmcplugin
+import xbmcaddon
 
-addon = xbmcaddon.Addon();
 
-username=addon.getSetting('username')
-if username=='':
-  username='nobody'
+addon = xbmcaddon.Addon()
 
-item = xbmcgui.ListItem('Hello, '+username)
+username = addon.getSetting('username') or 'nobody'
+
+item = xbmcgui.ListItem('Hello, %s' % username)
 xbmcplugin.addDirectoryItem(int(sys.argv[1]), '', item, isFolder=0)
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
